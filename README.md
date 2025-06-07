@@ -2,7 +2,7 @@
 
 ![Tests](https://img.shields.io/badge/tests-passing-brightgreen)
 ![Coverage](https://img.shields.io/badge/coverage-100%25-blue)
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 
 ## 📝 Overview
 
@@ -15,9 +15,12 @@ This project implements a resilient email sending service in **JavaScript** with
 - Circuit breaker  
 - Logging  
 - Basic queue system  
-- Status tracking  
+- Status tracking
 
----
+  ## 🌐 Live Demo
+
+- Deployed API Endpoint: [https://email-service-strr.onrender.com](https://email-service-strr.onrender.com)
+  
 
 ## 🚀 Features
 
