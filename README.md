@@ -17,9 +17,12 @@ This project implements a resilient email sending service in **JavaScript** with
 - Basic queue system  
 - Status tracking
 
-  ## 🌐 Live Demo
+
+- ## 🌐 Live Demo
 
 - Deployed API Endpoint: [https://email-service-strr.onrender.com](https://email-service-strr.onrender.com)
+- Returns: `"Email service API is running"` as a basic confirmation
+
   
 
 ## 🚀 Features
