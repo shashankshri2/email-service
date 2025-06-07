@@ -2,7 +2,7 @@
 
 ![Tests](https://img.shields.io/badge/tests-passing-brightgreen)
 ![Coverage](https://img.shields.io/badge/coverage-100%25-blue)
-
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## 📝 Overview
 
@@ -35,7 +35,7 @@ This project implements a resilient email sending service in **JavaScript** with
 ## 📁 Project Structure
 
 EMAIL-SERVICE/
-
+└── email-service-js/
 ├── node_modules/
 ├── services/
 │ ├── providers/
@@ -90,34 +90,25 @@ Minimal dependencies used (only jest for testing)
 
 💻 Usage
 
-// Import the EmailService class from your services folder
 const { EmailService } = require('./services/EmailService');
 
-// Create a new instance of the email service
 const emailService = new EmailService();
 
-// Define the email object with necessary fields
 const email = {
-  id: 'unique-email-id-123',              // Unique ID to prevent duplicate sending (idempotency)
-  to: 'recipient@example.com',            // Recipient email address
-  subject: 'Test Email',                   // Email subject line
-  body: 'This is a test email.',           // Email body content
+  id: 'unique-email-id-123',
+  to: 'recipient@example.com',
+  subject: 'Test Email',
+  body: 'This is a test email.',
 };
 
-// Send the email using the sendEmail method
 emailService.sendEmail(email)
   .then(result => {
     if (result.success) {
-      // If sending is successful, log a success message
       console.log('Email sent successfully!');
     } else {
-      // If sending fails, log the error details
       console.error('Failed to send email:', result.error);
     }
   });
-
-
-
 🧰 Guidelines Followed
 ✅ Language: JavaScript
 
